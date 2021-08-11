@@ -7,4 +7,5 @@ sections:
 - file: content
   sections:
   - file: markdown
+  - file: mathtest
   - file: notebooks

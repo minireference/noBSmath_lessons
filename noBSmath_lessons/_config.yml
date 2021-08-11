@@ -10,6 +10,15 @@ author                      : Ivan Savov
 copyright                   : "2021"
 logo                        : logo.png  # A path to the book logo
 
+# MyST parser options
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - colon_fence
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -35,3 +44,4 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
