@@ -46,14 +46,12 @@ html:
   use_repository_button: true
 
 
-repository:
-  url: https://github.com/minireference/noBSmath_lessons
-  path_to_book: noBSmath_lessons
-  branch: main
-
-
 # BinderHub to make things interactive
 launch_buttons:
   binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
   thebe: true
 
+
+sphinx:
+  extra_extensions:
+   - sphinx.ext.imgmath
