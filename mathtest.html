@@ -42,8 +42,6 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -212,27 +210,23 @@
   <div class="section" id="math-test">
 <h1>Math test<a class="headerlink" href="#math-test" title="Permalink to this headline">¶</a></h1>
 <p>Let’s see how math works in MyST.</p>
-<p>First an inline math example <span class="math notranslate nohighlight">\(\sin\theta\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-\sin^2\theta + \cos^2\theta = 1.
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight" id="equation-mylab">
-<span class="eqno">(1)<a class="headerlink" href="#equation-mylab" title="Permalink to this equation">¶</a></span>\[\begin{split}
-\begin{aligned}
+<p>First an inline math example <span class="math">\sin\theta</span> and</p>
+<div class="math">
+<p><span class="math">\sin^2\theta + \cos^2\theta = 1.</span></p>
+</div><p>or</p>
+<div class="math" id="equation-mylab">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-mylab" title="Permalink to this equation">¶</a></span><span class="math">\begin{aligned}
 a &amp;= b \\
   &amp;= c
-\end{aligned}
-\end{split}\]</div>
-<p>Equation <a class="reference internal" href="#equation-mylab">(1)</a> is right above.</p>
+\end{aligned}</span></p>
+</div><p>Equation <a class="reference internal" href="#equation-mylab">(1)</a> is right above.</p>
 <p>Now let’s try naked math:</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+<div class="amsmath math">
+<p><span class="math">\begin{align*}
 a &amp;= b \\
   &amp;= c
-\end{align*}\]</div>
-<p>this is the end of the section.</p>
+\end{align*}</span></p>
+</div><p>this is the end of the section.</p>
 </div>
 
     <script type="text/x-thebe-config">
