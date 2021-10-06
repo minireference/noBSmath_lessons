@@ -1,3 +1,7 @@
+# import files
+sources
+cut_material.txt
+
 # Build dir
 noBSmath_lessons/_build/
 

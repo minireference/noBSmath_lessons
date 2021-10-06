@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Converts a .ipynb file (created using colab) to a MyST syntax .md file
+# (c) Minireference Co. 2021. MIT LICENSE
+
+INPUTNB="$1"
+
+echo "Running nbstripout to remove cell metadata..."
+nbstripout \
+  --keep-output \
+  --keep-count \
+  --extra-keys "cell.metadata.colab cell.metadata.outputId cell.metadata.id" \
+  "$INPUTNB"
+
+echo "Running jupytext '$INPUTNB' --to myst     ..."
+jupytext "$INPUTNB" --to myst
+
