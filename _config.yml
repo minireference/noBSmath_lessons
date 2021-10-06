@@ -9,6 +9,8 @@ title                       : No Bullshit Math Lessons
 author                      : Ivan Savov
 copyright                   : "2021"
 logo                        : logo.png  # A path to the book logo
+exclude_patterns            : [venv, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "sources/introductorypython_tutorials", "sources/colabnbs"]
+
 
 # MyST parser options
 parse:
@@ -36,7 +38,7 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/minireference/noBSmath_lessons
-  path_to_book: noBSmath_lessons
+  path_to_book: .
   branch: main
 
 # Add GitHub buttons to your book

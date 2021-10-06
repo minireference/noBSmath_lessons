@@ -3,8 +3,7 @@ sources
 cut_material.txt
 
 # Build dir
-noBSmath_lessons/_build/
-
+_build/
 
 
 # Byte-compiled / optimized / DLL files

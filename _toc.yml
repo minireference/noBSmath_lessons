@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-article
+root: samples/intro
+sections:
+- file: samples/content
+  sections:
+  - file: samples/markdown
+  - file: samples/mathtest
+  - file: samples/notebooks
+  - file: sources/Part_1_variables_and_expressions.md
+  - file: sources/Part_2_functions.md
+  - file: sources/Part_3_for_loops_and_vectors.md
