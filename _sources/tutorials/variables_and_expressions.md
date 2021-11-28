@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Introduction to Python Part 1: variables and expressions
+# Python Coding Tutorial Part 1: variables and expressions
 
 This notebook contains some exercises to get you familiar with basic Python programming notions.
 
@@ -184,7 +184,7 @@ expr4=5/0
 
 ### Integration problem
 
-What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see pH definition on Wikipedia)
+What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see [pH definition](https://en.wikipedia.org/wiki/PH#Definition_and_measurement) on Wikipedia)
 
 What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)? 
 
@@ -462,13 +462,17 @@ In the next few sections, we'll cover other important parts of Python:
 
 ## Exercises
 
-- Review Python syntax cheatsheet https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf
+- Review Python syntax cheatsheet [https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf](https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf)
   - add single dot next to concepts you've hear about
   - double dot next to python concepts you understand
   - triple dot next to concepts you've used in your code
 - Try poking-around and explore expressions involving numbers (`int` and `float`),
   strings (`str`), and booleans (`bool`).
 - Go through all quiz questions in reading material as notebooks:
-  - 03-Variables: https://introductorypython.github.io/tutorials/03-Variables.html
-  - 04-Operarators: https://introductorypython.github.io/tutorials/04-Operators.html
-  - 06-Data types: https://introductorypython.github.io/tutorials/06-DataTypes.html
+  - 03-Variables: [https://introductorypython.github.io/tutorials/03-Variables.html](https://introductorypython.github.io/tutorials/03-Variables.html)
+  - 04-Operarators: [https://introductorypython.github.io/tutorials/04-Operators.html](https://introductorypython.github.io/tutorials/04-Operators.html)
+  - 06-Data types: [https://introductorypython.github.io/tutorials/06-DataTypes.html](https://introductorypython.github.io/tutorials/06-DataTypes.html)
+- Print out the [SymPy tutorial](https://minireference.com/static/tutorials/sympy_tutorial.pdf)
+  and read the beginning, which is an intro to Python from a math perspective.
+  Alt version [here](https://minireference.com/static/excerpts/noBSmath_v5_preview.pdf#page=77).
+

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction to Python Part 1: variables and expressions &#8212; No Bullshit Math Lessons</title>
+    <title>Python Coding Tutorial Part 1: variables and expressions &#8212; No Bullshit Math Lessons</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,6 +51,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Coding Tutorial Part 2: functions" href="functions.html" />
     <link rel="prev" title="Python Coding Tutorial" href="python_coding.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -135,7 +136,17 @@
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Introduction to Python Part 1: variables and expressions
+     Python Coding Tutorial Part 1: variables and expressions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions.html">
+     Python Coding Tutorial Part 2: functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="for_loops_and_vectors.html">
+     For loops and vectors problems
     </a>
    </li>
   </ul>
@@ -349,8 +360,8 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-python-part-1-variables-and-expressions">
-<h1>Introduction to Python Part 1: variables and expressions<a class="headerlink" href="#introduction-to-python-part-1-variables-and-expressions" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-coding-tutorial-part-1-variables-and-expressions">
+<h1>Python Coding Tutorial Part 1: variables and expressions<a class="headerlink" href="#python-coding-tutorial-part-1-variables-and-expressions" title="Permalink to this headline">¶</a></h1>
 <p>This notebook contains some exercises to get you familiar with basic Python programming notions.</p>
 <div class="section" id="programming-101">
 <h2>Programming 101<a class="headerlink" href="#programming-101" title="Permalink to this headline">¶</a></h2>
@@ -384,7 +395,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1645</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1746</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">3</span><span class="o">/</span><span class="mi">0</span>
 
 <span class="ne">ZeroDivisionError</span>: division by zero
@@ -555,7 +566,7 @@
 </div>
 <div class="section" id="integration-problem">
 <h3>Integration problem<a class="headerlink" href="#integration-problem" title="Permalink to this headline">¶</a></h3>
-<p>What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see pH definition on Wikipedia)</p>
+<p>What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see <a class="reference external" href="https://en.wikipedia.org/wiki/PH#Definition_and_measurement">pH definition</a> on Wikipedia)</p>
 <p>What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)?</p>
 <p>Write a Python expression that computes the pH given variable aH</p>
 <p>pH = some expression involving the variable aH</p>
@@ -849,7 +860,7 @@ Look back to the list above—the Python types are shown in <strong>bold</strong
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Review Python syntax cheatsheet https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf</p>
+<li><p>Review Python syntax cheatsheet <a class="reference external" href="https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf">https://blog.finxter.com/wp-content/uploads/2020/07/Finxter_WorldsMostDensePythonCheatSheet.pdf</a></p>
 <ul>
 <li><p>add single dot next to concepts you’ve hear about</p></li>
 <li><p>double dot next to python concepts you understand</p></li>
@@ -860,11 +871,14 @@ Look back to the list above—the Python types are shown in <strong>bold</strong
 strings (<code class="docutils literal notranslate"><span class="pre">str</span></code>), and booleans (<code class="docutils literal notranslate"><span class="pre">bool</span></code>).</p></li>
 <li><p>Go through all quiz questions in reading material as notebooks:</p>
 <ul>
-<li><p>03-Variables: https://introductorypython.github.io/tutorials/03-Variables.html</p></li>
-<li><p>04-Operarators: https://introductorypython.github.io/tutorials/04-Operators.html</p></li>
-<li><p>06-Data types: https://introductorypython.github.io/tutorials/06-DataTypes.html</p></li>
+<li><p>03-Variables: <a class="reference external" href="https://introductorypython.github.io/tutorials/03-Variables.html">https://introductorypython.github.io/tutorials/03-Variables.html</a></p></li>
+<li><p>04-Operarators: <a class="reference external" href="https://introductorypython.github.io/tutorials/04-Operators.html">https://introductorypython.github.io/tutorials/04-Operators.html</a></p></li>
+<li><p>06-Data types: <a class="reference external" href="https://introductorypython.github.io/tutorials/06-DataTypes.html">https://introductorypython.github.io/tutorials/06-DataTypes.html</a></p></li>
 </ul>
 </li>
+<li><p>Print out the <a class="reference external" href="https://minireference.com/static/tutorials/sympy_tutorial.pdf">SymPy tutorial</a>
+and read the beginning, which is an intro to Python from a math perspective.
+Alt version <a class="reference external" href="https://minireference.com/static/excerpts/noBSmath_v5_preview.pdf#page=77">here</a>.</p></li>
 </ul>
 </div>
 </div>
@@ -900,6 +914,13 @@ strings (<code class="docutils literal notranslate"><span class="pre">str</span>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Python Coding Tutorial</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="functions.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python Coding Tutorial Part 2: functions</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         

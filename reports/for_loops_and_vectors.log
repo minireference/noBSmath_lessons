@@ -17,14 +17,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-3/0
+for s in scores:
+    print(s)
+
+
+
+for (i=0; i<length(scores); i=i+1){
+    s = scores[i];
+    print(s);
+}
 ------------------
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mZeroDivisionError[0m                         Traceback (most recent call last)
-[0;32m/tmp/ipykernel_1746/3150626867.py[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0;36m3[0m[0;34m/[0m[0;36m0[0m[0;34m[0m[0;34m[0m[0m
-[0m
-[0;31mZeroDivisionError[0m: division by zero
-ZeroDivisionError: division by zero
+[0;36m  File [0;32m"/tmp/ipykernel_1709/2181820327.py"[0;36m, line [0;32m6[0m
+[0;31m    for (i=0; i<length(scores); i=i+1){[0m
+[0m          ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+SyntaxError: invalid syntax (2181820327.py, line 6)
 
