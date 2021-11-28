@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Python Coding Tutorial Part 2: functions
+# Functions
 
 Functions are one of the most important concepts in math and programming.
 

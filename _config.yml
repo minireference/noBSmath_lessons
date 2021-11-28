@@ -9,7 +9,9 @@ title                       : No Bullshit Math Lessons
 author                      : Ivan Savov
 copyright                   : "2021"
 logo                        : logo.png  # A path to the book logo
-exclude_patterns            : [venv, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "sources/introductorypython_tutorials", "sources/colabnbs"]
+exclude_patterns            : [venv, _build, Thumbs.db, .DS_Store,
+                               "**.ipynb_checkpoints", "sources/introductorypython_tutorials", "sources/colabnbs",
+                               "CONDUCT.md", "CONTRIBUTING.md", "README.md", "sources/README.md"]
 
 
 # MyST parser options
@@ -20,6 +22,7 @@ parse:
     - amsmath
     - dollarmath
     - colon_fence
+    - linkify
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -50,10 +53,10 @@ html:
 
 # BinderHub to make things interactive
 launch_buttons:
-  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
+  binderhub_url: "https://mybinder.org"
   thebe: true
 
 
-sphinx:
-  extra_extensions:
-   - sphinx.ext.imgmath
+# sphinx:
+#   extra_extensions:
+#    - sphinx.ext.imgmath

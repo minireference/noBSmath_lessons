@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# For loops and vectors problems
+# For loops and vectors
 
 
 ## Prerequisites

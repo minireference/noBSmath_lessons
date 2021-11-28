@@ -10,7 +10,7 @@ kernelspec:
   name: python3
 ---
 
-# Python Coding Tutorial Part 1: variables and expressions
+# Variables and expressions
 
 This notebook contains some exercises to get you familiar with basic Python programming notions.
 
@@ -186,7 +186,6 @@ expr4=5/0
 
 What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see [pH definition](https://en.wikipedia.org/wiki/PH#Definition_and_measurement) on Wikipedia)
 
-What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)? 
 
 Write a Python expression that computes the pH given variable aH
 
@@ -202,6 +201,8 @@ aH = 1e-7
 pH_value = -1*math.log(aH,10)
 print('The pH value is', pH_value)
 ```
+
+What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)? 
 
 Write a Python expression that computes the aH given variable pH 
 

@@ -2,15 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-article
-root: samples/intro
+root: intro
 sections:
-
-- file: samples/content
-  sections:
-  - file: samples/markdown
-  - file: samples/mathtest
-  - file: samples/notebooks
-
 - file: tutorials/python_coding
   sections:
   - file: tutorials/variables_and_expressions.md
