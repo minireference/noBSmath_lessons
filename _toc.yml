@@ -9,6 +9,6 @@ sections:
   - file: samples/markdown
   - file: samples/mathtest
   - file: samples/notebooks
-  - file: sources/Part_1_variables_and_expressions.md
-  - file: sources/Part_2_functions.md
-  - file: sources/Part_3_for_loops_and_vectors.md
+  - file: tutorials/variables_and_expressions.md
+  - file: tutorials/functions.md
+  - file: tutorials/for_loops_and_vectors.md
