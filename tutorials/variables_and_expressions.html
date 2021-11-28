@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python Coding Tutorial Part 1: variables and expressions &#8212; No Bullshit Math Lessons</title>
+    <title>Variables and expressions &#8212; No Bullshit Math Lessons</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -51,7 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python Coding Tutorial Part 2: functions" href="functions.html" />
+    <link rel="next" title="Functions" href="functions.html" />
     <link rel="prev" title="Python Coding Tutorial" href="python_coding.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -91,62 +93,35 @@
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../samples/intro.html">
-   Welcome to your Jupyter Book
+  <a class="reference internal" href="../intro.html">
+   No Bullshit Guide to Mathematics Bonus Lessons
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../samples/content.html">
-   Content in Jupyter Book
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/mathtest.html">
-     Math test
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-  </ul>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="python_coding.html">
    Python Coding Tutorial
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Python Coding Tutorial Part 1: variables and expressions
+     Variables and expressions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="functions.html">
-     Python Coding Tutorial Part 2: functions
+     Functions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="for_loops_and_vectors.html">
-     For loops and vectors problems
+     For loops and vectors
     </a>
    </li>
   </ul>
@@ -360,8 +335,8 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="python-coding-tutorial-part-1-variables-and-expressions">
-<h1>Python Coding Tutorial Part 1: variables and expressions<a class="headerlink" href="#python-coding-tutorial-part-1-variables-and-expressions" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="variables-and-expressions">
+<h1>Variables and expressions<a class="headerlink" href="#variables-and-expressions" title="Permalink to this headline">¶</a></h1>
 <p>This notebook contains some exercises to get you familiar with basic Python programming notions.</p>
 <div class="section" id="programming-101">
 <h2>Programming 101<a class="headerlink" href="#programming-101" title="Permalink to this headline">¶</a></h2>
@@ -395,7 +370,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1746</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1638</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">3</span><span class="o">/</span><span class="mi">0</span>
 
 <span class="ne">ZeroDivisionError</span>: division by zero
@@ -411,10 +386,10 @@
 <p>Similar to variables in math, a variable in Python is a convenient name we use to refer to any value: a onstant <code class="docutils literal notranslate"><span class="pre">c</span></code>, the input to a funciton <code class="docutils literal notranslate"><span class="pre">x</span></code>, the output of a function <code class="docutils literal notranslate"><span class="pre">y</span></code>, or any other intermediate value.</p>
 <div class="section" id="variables-types">
 <h3>Variables types<a class="headerlink" href="#variables-types" title="Permalink to this headline">¶</a></h3>
-<p>Similar to the notion of number sets in math <span class="math">\mathbb{Z}</span>, <span class="math">\mathbb{R}</span> etc., computers variables also come in different types:</p>
+<p>Similar to the notion of number sets in math <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> etc., computers variables also come in different types:</p>
 <ul class="simple">
-<li><p><strong>int</strong> - integers ex: <code class="docutils literal notranslate"><span class="pre">34</span></code>,<code class="docutils literal notranslate"><span class="pre">65</span></code>, <code class="docutils literal notranslate"><span class="pre">78</span></code>, <code class="docutils literal notranslate"><span class="pre">-4</span></code>, etc. (rougly equivalent to <span class="math">\mathbb{Z}</span>)</p></li>
-<li><p><strong>float</strong> - ex: <code class="docutils literal notranslate"><span class="pre">4.6</span></code>,<code class="docutils literal notranslate"><span class="pre">78.5</span></code>, <code class="docutils literal notranslate"><span class="pre">1e-3</span></code> (full name is “floating point number”; similar to <span class="math">\mathbb{R}</span> but only with finite precision)</p></li>
+<li><p><strong>int</strong> - integers ex: <code class="docutils literal notranslate"><span class="pre">34</span></code>,<code class="docutils literal notranslate"><span class="pre">65</span></code>, <code class="docutils literal notranslate"><span class="pre">78</span></code>, <code class="docutils literal notranslate"><span class="pre">-4</span></code>, etc. (rougly equivalent to <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>)</p></li>
+<li><p><strong>float</strong> - ex: <code class="docutils literal notranslate"><span class="pre">4.6</span></code>,<code class="docutils literal notranslate"><span class="pre">78.5</span></code>, <code class="docutils literal notranslate"><span class="pre">1e-3</span></code> (full name is “floating point number”; similar to <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> but only with finite precision)</p></li>
 <li><p><strong>bool</strong> a Boolean truth value with only two choices: <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 <li><p><strong>string</strong> - text ex: <code class="docutils literal notranslate"><span class="pre">'Hello'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Hello</span> <span class="pre">everyone'</span></code></p></li>
 <li><p><strong>list</strong> a sequence of values ​​- ex: <code class="docutils literal notranslate"><span class="pre">[69,</span> <span class="pre">81,</span> <span class="pre">92,</span> <span class="pre">77]</span></code>. The beginning and the end of the list are denoted by the brackets <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code>, and its elements are separated by commas.</p></li>
@@ -567,7 +542,6 @@
 <div class="section" id="integration-problem">
 <h3>Integration problem<a class="headerlink" href="#integration-problem" title="Permalink to this headline">¶</a></h3>
 <p>What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see <a class="reference external" href="https://en.wikipedia.org/wiki/PH#Definition_and_measurement">pH definition</a> on Wikipedia)</p>
-<p>What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)?</p>
 <p>Write a Python expression that computes the pH given variable aH</p>
 <p>pH = some expression involving the variable aH</p>
 <p>Test: if aH=7×10−6  the value of the expression should match the answer to the first problem</p>
@@ -581,6 +555,7 @@
 </div>
 </div>
 </div>
+<p>What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)?</p>
 <p>Write a Python expression that computes the aH given variable pH</p>
 <p>aH =  some expression involving the variable pH</p>
 <div class="cell docutils container">
@@ -918,7 +893,7 @@ Alt version <a class="reference external" href="https://minireference.com/static
     <a class='right-next' id="next-link" href="functions.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Coding Tutorial Part 2: functions</p>
+        <p class="prev-next-title">Functions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>For loops and vectors problems &#8212; No Bullshit Math Lessons</title>
+    <title>For loops and vectors &#8212; No Bullshit Math Lessons</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -51,7 +53,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Python Coding Tutorial Part 2: functions" href="functions.html" />
+    <link rel="prev" title="Functions" href="functions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -90,62 +92,35 @@
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../samples/intro.html">
-   Welcome to your Jupyter Book
+  <a class="reference internal" href="../intro.html">
+   No Bullshit Guide to Mathematics Bonus Lessons
   </a>
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../samples/content.html">
-   Content in Jupyter Book
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/markdown.html">
-     Markdown Files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/mathtest.html">
-     Math test
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../samples/notebooks.html">
-     Content with notebooks
-    </a>
-   </li>
-  </ul>
- </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="python_coding.html">
    Python Coding Tutorial
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="variables_and_expressions.html">
-     Python Coding Tutorial Part 1: variables and expressions
+     Variables and expressions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="functions.html">
-     Python Coding Tutorial Part 2: functions
+     Functions
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     For loops and vectors problems
+     For loops and vectors
     </a>
    </li>
   </ul>
@@ -347,8 +322,8 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="for-loops-and-vectors-problems">
-<h1>For loops and vectors problems<a class="headerlink" href="#for-loops-and-vectors-problems" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="for-loops-and-vectors">
+<h1>For loops and vectors<a class="headerlink" href="#for-loops-and-vectors" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -585,7 +560,7 @@ This is a little weird, but OK because a vector is a special type of matrix.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_1709/2181820327.py&quot;</span><span class="gt">, line </span><span class="mi">6</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_1599/2181820327.py&quot;</span><span class="gt">, line </span><span class="mi">6</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">length</span><span class="p">(</span><span class="n">scores</span><span class="p">);</span> <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">){</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -652,10 +627,12 @@ This is a little weird, but OK because a vector is a special type of matrix.</p>
 <p>Your turn to play with lists now! Complete the code required to implement the functions <code class="docutils literal notranslate"><span class="pre">compute_mean</span></code> and <code class="docutils literal notranslate"><span class="pre">compute_std</span></code> below.</p>
 <div class="section" id="question-1-mean">
 <h4>Question 1: Mean<a class="headerlink" href="#question-1-mean" title="Permalink to this headline">¶</a></h4>
-<p>The formula for the mean of a list of numbers <span class="math">[x_1, x_2, \ldots, x_n]</span> is:
-$<span class="math">\text{mean} = \overline{x}
+<p>The formula for the mean of a list of numbers <span class="math notranslate nohighlight">\([x_1, x_2, \ldots, x_n]\)</span> is:
+$<span class="math notranslate nohighlight">\(
+    \text{mean} = \overline{x}
     = \frac{1}{n}\sum_{i=1}^n x_i
-    = \tfrac{1}{n} \left[ x_1 + x_2 + \cdots + x_n \right].</span>$</p>
+    = \tfrac{1}{n} \left[ x_1 + x_2 + \cdots + x_n \right].
+\)</span>$</p>
 <p>Write the function <code class="docutils literal notranslate"><span class="pre">compute_mean(numbers)</span></code>: a function that computes the mean of a list of numbers</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -730,10 +707,12 @@ $<span class="math">\text{mean} = \overline{x}
 <div class="section" id="question-2-sample-standard-deviation">
 <h4>Question 2: Sample standard deviation<a class="headerlink" href="#question-2-sample-standard-deviation" title="Permalink to this headline">¶</a></h4>
 <p>The formula for the sample standard seviation of a list of numbers is:
-$<span class="math">\text{std} = s
+$<span class="math notranslate nohighlight">\(
+    \text{std} = s
     = \sqrt{ \tfrac{1}{n-1}\sum_{i=1}^n (x_i-\overline{x})^2 }
-    = \sqrt{ \tfrac{1}{n-1}\left[ (x_1-\overline{x})^2 + (x_2-\overline{x})^2 + \cdots + (x_n-\overline{x})^2\right]}.</span>$</p>
-<p>Note the division is by <span class="math">(n-1)</span> and not <span class="math">n</span>. Strange, no? You’ll have to wait until stats to see why this is the case.</p>
+    = \sqrt{ \tfrac{1}{n-1}\left[ (x_1-\overline{x})^2 + (x_2-\overline{x})^2 + \cdots + (x_n-\overline{x})^2\right]}.
+\)</span>$</p>
+<p>Note the division is by <span class="math notranslate nohighlight">\((n-1)\)</span> and not <span class="math notranslate nohighlight">\(n\)</span>. Strange, no? You’ll have to wait until stats to see why this is the case.</p>
 <p>Write <code class="docutils literal notranslate"><span class="pre">compute_std(numbers)</span></code>: computes the sample standard deviation</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -795,11 +774,13 @@ $<span class="math">\text{std} = s
 </div>
 <div class="section" id="vectors">
 <h2>Vectors<a class="headerlink" href="#vectors" title="Permalink to this headline">¶</a></h2>
-<p>A vector <span class="math">\vec{v} \in \mathbb{R}^n</span> is an <span class="math">n</span>-tuple of real numbers:</p>
-<div class="math">
-<p><span class="math">\vec{v} = (v_1,v_2,v_3, \ldots, v_n) \  \in \  \mathbb{R}^n.</span></p>
-</div><p>To specify the vector <span class="math">\vec{v}</span>,
-we specify the values for its components <span class="math">v_1</span>, <span class="math">v_2</span>, <span class="math">v_3</span>, …, <span class="math">v_n</span>.</p>
+<p>A vector <span class="math notranslate nohighlight">\(\vec{v} \in \mathbb{R}^n\)</span> is an <span class="math notranslate nohighlight">\(n\)</span>-tuple of real numbers:</p>
+<div class="math notranslate nohighlight">
+\[
+ \vec{v} = (v_1,v_2,v_3, \ldots, v_n) \  \in \  \mathbb{R}^n.
+\]</div>
+<p>To specify the vector <span class="math notranslate nohighlight">\(\vec{v}\)</span>,
+we specify the values for its components <span class="math notranslate nohighlight">\(v_1\)</span>, <span class="math notranslate nohighlight">\(v_2\)</span>, <span class="math notranslate nohighlight">\(v_3\)</span>, …, <span class="math notranslate nohighlight">\(v_n\)</span>.</p>
 <p>In Python, we can represent vectors as lists:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1092,7 +1073,7 @@ we specify the values for its components <span class="math">v_1</span>, <span cl
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python Coding Tutorial Part 2: functions</p>
+            <p class="prev-next-title">Functions</p>
         </div>
     </a>
 </div>
