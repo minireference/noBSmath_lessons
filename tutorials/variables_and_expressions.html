@@ -269,6 +269,18 @@
     <a class="reference internal nav-link" href="#integration-problem">
      Integration problem
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#part-1">
+       Part 1
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#part-2">
+       Part 2
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#string-expressions">
@@ -370,7 +382,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1638</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1669</span><span class="o">/</span><span class="mf">3150626867.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">3</span><span class="o">/</span><span class="mi">0</span>
 
 <span class="ne">ZeroDivisionError</span>: division by zero
@@ -541,33 +553,46 @@
 </div>
 <div class="section" id="integration-problem">
 <h3>Integration problem<a class="headerlink" href="#integration-problem" title="Permalink to this headline">¶</a></h3>
-<p>What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see <a class="reference external" href="https://en.wikipedia.org/wiki/PH#Definition_and_measurement">pH definition</a> on Wikipedia)</p>
+<p>What is the pH of a solution with hydrogen ion activity, aH+ = 1×10−7
+(the number of moles of hydrogen ions per litre of solution).
+See <a class="reference external" href="https://en.wikipedia.org/wiki/PH#Definition_and_measurement">pH definition</a> on Wikipedia.</p>
+<div class="section" id="part-1">
+<h4>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">¶</a></h4>
 <p>Write a Python expression that computes the pH given variable aH</p>
 <p>pH = some expression involving the variable aH</p>
-<p>Test: if aH=7×10−6  the value of the expression should match the answer to the first problem</p>
+<p>Compute the pH value for:</p>
+<ul class="simple">
+<li><p>(1) aH=3.388e-08</p></li>
+<li><p>(2) aH=1×10−7</p></li>
+<li><p>(3) aH=7.244359600749906e-07</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="n">aH</span> <span class="o">=</span> <span class="mf">1e-7</span>
-<span class="n">pH_value</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">aH</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The pH value is&#39;</span><span class="p">,</span> <span class="n">pH_value</span><span class="p">)</span>
+<span class="n">pH</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">aH</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The pH value is&#39;</span><span class="p">,</span> <span class="n">pH</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)?</p>
-<p>Write a Python expression that computes the aH given variable pH</p>
+<p>Test: if aH=1×10−7, the value of pH computed should be 7.0.</p>
+</div>
+<div class="section" id="part-2">
+<h4>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">¶</a></h4>
+<p>What is the hydrogen ion activity, aH+, in liquid for a given pH:</p>
 <p>aH =  some expression involving the variable pH</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pH</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">aH</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">pH</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;When pH = 7, the molar concentration is&#39;</span><span class="p">,</span> <span class="n">molar_conc_of_H</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;When pH = 7, the molar concentration is&#39;</span><span class="p">,</span> <span class="n">aH</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Test: if pH=7  …</p>
+<p>Test: if pH=7 then aH should be 1e−7.</p>
+</div>
 </div>
 <div class="section" id="string-expressions">
 <h3>String expressions<a class="headerlink" href="#string-expressions" title="Permalink to this headline">¶</a></h3>

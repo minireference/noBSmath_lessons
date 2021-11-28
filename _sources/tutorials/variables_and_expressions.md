@@ -184,38 +184,48 @@ expr4=5/0
 
 ### Integration problem
 
-What is the pH of a solution with hydrogen ion activity, aH+ = 7×10−6  (the number of moles of hydrogen ions per litre of solution).   (see [pH definition](https://en.wikipedia.org/wiki/PH#Definition_and_measurement) on Wikipedia)
 
+What is the pH of a solution with hydrogen ion activity, aH+ = 1×10−7
+(the number of moles of hydrogen ions per litre of solution).
+See [pH definition](https://en.wikipedia.org/wiki/PH#Definition_and_measurement) on Wikipedia.
+
+
+#### Part 1
 
 Write a Python expression that computes the pH given variable aH
 
    pH = some expression involving the variable aH
 
-Test: if aH=7×10−6  the value of the expression should match the answer to the first problem
+Compute the pH value for:
+- (1) aH=3.388e-08
+- (2) aH=1×10−7
+- (3) aH=7.244359600749906e-07
 
 
 
 ```{code-cell}
 import math
 aH = 1e-7
-pH_value = -1*math.log(aH,10)
-print('The pH value is', pH_value)
+pH = -1*math.log(aH,10)
+print('The pH value is', pH)
 ```
 
-What is the hydrogen ion activity, aH+, in liquid with pH=7.47 (water at 0°C),  pH=7.00 (water at 25°C), and pH=6.14 (water at 100°C)? 
+Test: if aH=1×10−7, the value of pH computed should be 7.0.
 
-Write a Python expression that computes the aH given variable pH 
+
+#### Part 2
+What is the hydrogen ion activity, aH+, in liquid for a given pH:
 
    aH =  some expression involving the variable pH
-
 
 
 ```{code-cell}
 pH = 7
 aH = 10**(-(pH))
-print('When pH = 7, the molar concentration is', molar_conc_of_H)
+print('When pH = 7, the molar concentration is', aH)
 ```
-Test: if pH=7  ... 
+
+Test: if pH=7 then aH should be 1e−7.
 
 
 ### String expressions
