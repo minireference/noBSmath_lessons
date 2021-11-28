@@ -4,11 +4,15 @@
 format: jb-article
 root: samples/intro
 sections:
+
 - file: samples/content
   sections:
   - file: samples/markdown
   - file: samples/mathtest
   - file: samples/notebooks
+
+- file: tutorials/python_coding
+  sections:
   - file: tutorials/variables_and_expressions.md
   - file: tutorials/functions.md
   - file: tutorials/for_loops_and_vectors.md
