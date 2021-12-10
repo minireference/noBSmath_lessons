@@ -39,6 +39,9 @@ print(x)
 No problem with this cell (it just sets the variable `x` to the value `3`, then prints the value of x to the screen).
 
 ```{code-cell}
+---
+tags: [raises-exception]
+---
 3/0
 ```
 Here we get an error since we're trying to compute an expression that contains a divide by zero error: Python tell us a `ZeroDivisionError: division by zero` has occurred, i.e., check your math expressions!
@@ -174,11 +177,11 @@ print(expr3)  # 1.5
 # print(expr4)  
 ```
 
-```{code-cell}
-
-```
 
 ```{code-cell}
+---
+tags: [raises-exception]
+---
 expr4=5/0
 ```
 
