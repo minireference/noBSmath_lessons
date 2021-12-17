@@ -28,7 +28,7 @@ for (i=0; i<length(scores); i=i+1){
 }
 ------------------
 
-[0;36m  File [0;32m"/tmp/ipykernel_1653/2181820327.py"[0;36m, line [0;32m6[0m
+[0;36m  File [0;32m"/tmp/ipykernel_1651/2181820327.py"[0;36m, line [0;32m6[0m
 [0;31m    for (i=0; i<length(scores); i=i+1){[0m
 [0m          ^[0m
 [0;31mSyntaxError[0m[0;31m:[0m invalid syntax
