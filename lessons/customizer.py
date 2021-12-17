@@ -71,14 +71,14 @@ class Eq(sympy.Eq):
 
 
 def _wrap_function(func):
+    """
+    Patch sympy function so it handles ``Eq`` as first argument correclty
+    by broadcasting the `func` action to both ``eq.lhs`` and ``eq.rhs``.
+    Functions `solve`, `nsolve`, etc. are handled differently, convering the
+    equation object into an expression equal to zero: ``eq.lhs - eq.rhs``,
+    which is the expected input for "solve" functions in SymPy.
+    """
     def f(*args, **kwargs):
-        """
-        Patch sympy function so it handles ``Eq`` as first argument correclty
-        by broadcasting the `func` action to both ``eq.lhs`` and ``eq.rhs``.
-        Functions `solve`, `nsolve`, etc. are handled differently, convering the
-        equation object into an expression equal to zero: ``eq.lhs - eq.rhs``,
-        which is the expected input for "solve" functions in SymPy.
-        """
         if not args:
             return func(*args, **kwargs)
         if isinstance(args[0], Eq):
@@ -92,6 +92,9 @@ def _wrap_function(func):
         else:
             return func(*args, **kwargs)
 
+    # copy useful `func` attributes onto wrapper `f`
+    f.__name__ = func.__name__
+    f.__doc__ = func.__doc__
     return f
 
 names = dir(sympy)

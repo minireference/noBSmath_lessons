@@ -4,10 +4,11 @@
 format: jb-article
 root: intro
 sections:
+- file: lessons/solving_equations.ipynb
+- file: lessons/functions_and_their_inverses.ipynb
 - file: tutorials/python_coding
   sections:
   - file: tutorials/variables_and_expressions.md
   - file: tutorials/functions.md
   - file: tutorials/for_loops_and_vectors.md
 - file: articles/RepresentaionsOfMathObjects.ipynb
-- file: lessons/solving_equations.ipynb
